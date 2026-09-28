@@ -3,3 +3,6 @@
 2. Dashboard | dashboard.html
 3. Login | login.html
 4. Signup | signup.html
+
+## Vercel deployed link
+https://class-iq-sigma.vercel.app/
