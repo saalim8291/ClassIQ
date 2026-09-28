@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SignUp – ClassIQ</title>
+    <meta name="description" content="Create your ClassIQ account.">
+    <meta name="theme-color" content="#c6f676">
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+
+    <link rel="preload" href="assets/fonts/poppins-500.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components/button.css">
+    <link rel="stylesheet" href="css/components/header.css">
+    <link rel="stylesheet" href="css/components/form.css">
+  </head>
+  <body class="page-signup">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <script src="js/components/header.js" data-nav-label="Courses" data-nav-href="index.html#courses"></script>
+
+    <main id="main">
+      <section class="auth-card auth-card--signup" aria-labelledby="auth-title">
+        <h1 class="auth-card__title" id="auth-title">SignUp</h1>
+        <form class="form" data-auth-form data-redirect="dashboard.html" novalidate>
+          <div class="field">
+            <label class="sr-only" for="email">Email</label>
+            <input class="field__input" id="email" name="email" type="email" placeholder="Enter Your Email"
+                   autocomplete="email" data-rules="required email" aria-describedby="email-error">
+            <p class="field__error" id="email-error" role="alert"></p>
+          </div>
+          <div class="field">
+            <label class="sr-only" for="fullname">Full name</label>
+            <input class="field__input" id="fullname" name="fullname" type="text" placeholder="Enter Your Fullname"
+                   autocomplete="name" data-rules="required" aria-describedby="fullname-error">
+            <p class="field__error" id="fullname-error" role="alert"></p>
+          </div>
+          <div class="field">
+            <label class="sr-only" for="password">Password</label>
+            <input class="field__input" id="password" name="password" type="password" placeholder="Enter Your Password"
+                   autocomplete="new-password" data-rules="required min:8" aria-describedby="password-error">
+            <p class="field__error" id="password-error" role="alert"></p>
+          </div>
+          <button class="btn btn--lime btn--block form__submit" type="submit">SignUp</button>
+        </form>
+        <p class="auth-card__switch">Already have an account? <a href="login.html">Login</a></p>
+      </section>
+    </main>
+
+    <script src="js/utils/validators.js" defer></script>
+    <script src="js/modules/nav.js" defer></script>
+    <script src="js/modules/auth-form.js" defer></script>
+  </body>
+</html>

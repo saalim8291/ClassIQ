@@ -1,0 +1,81 @@
+/* Form controls + auth card */
+.auth-card {
+  width: min(100% - 2 * var(--gutter), 399px);
+  min-height: 495px;
+  /* card top sits at y=260 in every frame, whatever the header offset */
+  margin: clamp(48px, 11vw, calc(211px - var(--header-top))) auto 96px;
+  padding: 48px 36px 30px;
+  background: var(--color-surface);
+}
+
+.auth-card__title {
+  margin-bottom: 34px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--color-black);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.field {
+  position: relative;
+}
+
+.field__input {
+  width: 100%;
+  height: 43px;
+  padding: 0 14px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-black);
+  background: transparent;
+  border: 2px solid var(--color-black);
+  border-radius: var(--radius-md);
+}
+
+.field__input::placeholder {
+  color: var(--color-black);
+  opacity: 1;
+}
+
+.field__input[aria-invalid="true"] {
+  border-color: var(--color-error);
+}
+
+.field__error {
+  min-height: 0;
+  margin-top: 4px;
+  font-size: 0.8125rem;
+  color: var(--color-error);
+}
+
+.field__error:empty {
+  display: none;
+}
+
+.form__submit {
+  margin-top: 20px;
+}
+
+.auth-card__switch {
+  margin-top: 47px;
+  font-size: 1.03rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--color-black);
+}
+
+/* signup frame leaves extra room above the switch link */
+.auth-card--signup .auth-card__switch {
+  margin-top: 62px;
+}
+
+.auth-card__switch a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

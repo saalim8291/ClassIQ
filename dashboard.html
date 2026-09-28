@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard - ClassIQ</title>
+    <meta name="description" content="Browse and enroll in your favourite ClassIQ courses.">
+    <meta name="theme-color" content="#c6f676">
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+
+    <link rel="preload" href="assets/fonts/poppins-500.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components/button.css">
+    <link rel="stylesheet" href="css/components/header.css">
+    <link rel="stylesheet" href="css/components/card.css">
+    <link rel="stylesheet" href="css/pages/dashboard.css">
+  </head>
+  <body class="page-dashboard">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <script src="js/components/header.js" data-nav-label="Dashboard" data-nav-href="dashboard.html"></script>
+
+    <main class="container" id="main">
+      <section class="banner" aria-labelledby="banner-title">
+        <h1 class="banner__title" id="banner-title">Enroll in&ensp;Your Fav Courses</h1>
+        <img class="banner__media" src="assets/images/banner-avatar.jpg" width="445" height="361"
+             alt="ClassIQ mascot studying on a laptop" fetchpriority="high">
+      </section>
+
+      <section class="dashboard-courses" aria-labelledby="courses-title">
+        <h2 class="dashboard-courses__title" id="courses-title">
+          All Courses
+          <img src="assets/icons/share.svg" width="28" height="28" alt="">
+        </h2>
+        <ul class="course-grid">
+          <li class="course-tile" aria-hidden="true"></li>
+          <li class="course-tile" aria-hidden="true"></li>
+          <li class="course-tile" aria-hidden="true"></li>
+          <li class="course-tile" aria-hidden="true"></li>
+          <li class="course-tile" aria-hidden="true"></li>
+          <li class="course-tile" aria-hidden="true"></li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="js/modules/nav.js" defer></script>
+  </body>
+</html>
